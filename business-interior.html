@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이젠 인테리어</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--내비게이션 바 시작-->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+      id="nav-menu"
+    >
+      <div class="container-fluid px-3">
+        <a class="navbar-brand sunflower-font fw-bold" href="#"
+          ><img src="./images/logo.png" alt="로고" /> 이젠 인테리어</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="메뉴"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./profile.html">프로필</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                인테리어
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./private-interior.html"
+                    >개인 공간</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item active"
+                    aria-current="page"
+                    href="./business-interior.html"
+                    >비즈니스 공간</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">연락처</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--내비게이션 바 끝-->
+
+    <!--헤더 시작-->
+    <header>
+      <div id="headerCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./images/header1.jpg"
+              class="d-block w-100"
+              alt="헤더 이미지 1"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="fw-bold display-lg-2 fs-1">이젠 인테리어</h1>
+              <p class="fs-lg-3 fs-5 fw-bold text-warning">
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/header2.jpg"
+              class="d-block w-100 img-fluid"
+              alt="헤더 이미지 2"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="fw-bold display-lg-2 fs-1">이젠 인테리어</h1>
+              <p class="fs-lg-3 fs-5 fw-bold text-danger-emphasis">
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/header3.jpg"
+              class="d-block w-100 img-fluid"
+              alt="헤더 이미지 3"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="fw-bold display-lg-2 fs-1">이젠 인테리어</h1>
+              <p class="fs-lg-3 fs-5 fw-bold text-info-emphasis">
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/header4.jpg"
+              class="d-block w-100 img-fluid"
+              alt="헤더 이미지 4"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="fw-bold display-lg-2 fs-1">이젠 인테리어</h1>
+              <p class="fs-lg-3 fs-5 fw-bold text-warning">
+                Some representative placeholder content for the fourth slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/header5.jpg"
+              class="d-block w-100 img-fluid"
+              alt="헤더 이미지 5"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="fw-bold display-lg-2 fs-1">이젠 인테리어</h1>
+              <p class="fs-lg-3 fs-5 fw-bold text-danger">
+                Some representative placeholder content for the fifth slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#headerCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#headerCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <!--헤더 끝-->
+
+    <!--메인 섹션 시작-->
+    <main class="container my-5" id="main">
+      <div class="row">
+        <!--프로필바 섹션 시작-->
+        <section class="col-md-5 col-lg-3 order-2 order-md-1">
+          <!--프로필 시작-->
+          <div
+            class="d-flex flex-column align-items-center bg-black text-white p-3 rounded text-center"
+          >
+            <img
+              src="./images/main-profile.jpg"
+              alt="메인 프로필"
+              class="img-fluid rounded-circle p-4"
+            />
+            <h2 class="pb-4">이젠 Kim</h2>
+            <p class="pb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+              molestias quod numquam id dolor ducimus assumenda consequuntur aut
+              debitis quaerat.
+            </p>
+            <div class="container d-flex justify-content-evenly">
+              <a href="#" aria-label="유튜브"
+                ><i class="bi bi-youtube text-danger fs-4"></i
+              ></a>
+              <a href="#" aria-label="페이스북"
+                ><i class="bi bi-facebook text-primary fs-4"></i
+              ></a>
+              <a href="#" aria-label="인스타그램"
+                ><i class="bi bi-instagram text-warning fs-4"></i
+              ></a>
+            </div>
+          </div>
+          <!--프로필 끝-->
+
+          <!--자격사항 리스트 시작-->
+          <div class="card bg-dark text-white text-center my-3">
+            <div class="card-header">
+              <h3 class="fs-5 m-1">자격사항</h3>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">자격사항1</li>
+              <li class="list-group-item">자격사항2</li>
+              <li class="list-group-item">자격사항3</li>
+            </ul>
+          </div>
+          <!--자격사항 리스트 끝-->
+
+          <!--경력사항 리스트 시작-->
+          <div class="card bg-dark text-white text-center mt-3">
+            <div class="card-header">
+              <h3 class="fs-5 m-1">경력사항</h3>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <p class="text-muted m-1">2000-2022</p>
+                <p class="m-1 fw-bold">Lorem, ipsum dolor.</p>
+              </li>
+              <li class="list-group-item">
+                <p class="text-muted m-1">2000-2022</p>
+                <p class="m-1 fw-bold">Lorem, ipsum dolor.</p>
+              </li>
+              <li class="list-group-item">
+                <p class="text-muted m-1">2000-2022</p>
+                <p class="m-1 fw-bold">Lorem, ipsum dolor.</p>
+              </li>
+              <li class="list-group-item">
+                <p class="text-muted m-1">2000-2022</p>
+                <p class="m-1 fw-bold">Lorem, ipsum dolor.</p>
+              </li>
+            </ul>
+          </div>
+          <!--경력사항 리스트 끝-->
+        </section>
+        <!--프로필바 섹션 끝-->
+
+        <!--비즈니스 공간 섹션 시작-->
+        <section class="col-md-7 col-lg-9 order-1 order-md-2">
+          <!--비즈니스 공간 인테리어 시작-->
+          <section class="text-center py-5">
+            <h1 class="fw-bold mb-3">비즈니스 공간 인테리어</h1>
+            <p class="text-muted">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+              sequi recusandae laboriosam adipisci quo nemo ea rerum
+              perspiciatis, voluptate molestiae!
+            </p>
+            <img
+              src="./images/business.jpg"
+              alt="비지니스 인테리어"
+              class="img-fluid my-3"
+            />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt,
+              delectus similique! Impedit laborum sint soluta libero ullam in
+              corporis accusamus, distinctio corrupti et iste, praesentium cum
+              recusandae adipisci sequi omnis! Cum minus maiores enim dolorem
+              maxime deleniti ipsa. Labore amet dolorem nemo quasi
+              exercitationem aspernatur corporis sequi tempore! Tenetur, eos!
+            </p>
+          </section>
+          <!--비즈니스 공간 인테리어 끝-->
+
+          <hr />
+
+          <!--자주 묻는 질문 시작-->
+          <section class="py-5">
+            <div class="col-lg-9 mx-auto">
+              <div class="text-center">
+                <h1 class="fw-bold">자주 묻는 질문</h1>
+                <p class="text-muted my-4">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  dolor temporibus libero rem culpa, aperiam nam natus iste
+                  mollitia officiis?
+                </p>
+              </div>
+              <div class="accordion" id="accordionExample">
+                <!--질문 1 시작-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      질문#1
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <h4 class="fw-bold">Lorem ipsum dolor sit amet.</h4>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Officia, sit laborum. Voluptates iste ipsam dolore
+                        fuga vitae assumenda, temporibus deleniti?
+                      </p>
+                      <h4 class="fw-bold">Lorem ipsum dolor sit amet.</h4>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Officia, sit laborum. Voluptates iste ipsam dolore
+                        fuga vitae assumenda, temporibus deleniti?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--질문 1 끝-->
+
+                <!--질문 2 시작-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      질문#2
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <h4 class="fw-bold">Lorem ipsum dolor sit amet.</h4>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Officia, sit laborum. Voluptates iste ipsam dolore
+                        fuga vitae assumenda, temporibus deleniti?
+                      </p>
+                      <h4 class="fw-bold">Lorem ipsum dolor sit amet.</h4>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Officia, sit laborum. Voluptates iste ipsam dolore
+                        fuga vitae assumenda, temporibus deleniti?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--질문 2 끝-->
+
+                <!--질문 3 시작-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      질문#3
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <h4 class="fw-bold">Lorem ipsum dolor sit amet.</h4>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Officia, sit laborum. Voluptates iste ipsam dolore
+                        fuga vitae assumenda, temporibus deleniti?
+                      </p>
+                      <h4 class="fw-bold">Lorem ipsum dolor sit amet.</h4>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Officia, sit laborum. Voluptates iste ipsam dolore
+                        fuga vitae assumenda, temporibus deleniti?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--질문 3 끝-->
+
+                <!--질문 4 시작-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      질문#4
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <h4 class="fw-bold">Lorem ipsum dolor sit amet.</h4>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Officia, sit laborum. Voluptates iste ipsam dolore
+                        fuga vitae assumenda, temporibus deleniti?
+                      </p>
+                      <h4 class="fw-bold">Lorem ipsum dolor sit amet.</h4>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Officia, sit laborum. Voluptates iste ipsam dolore
+                        fuga vitae assumenda, temporibus deleniti?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--질문 4 끝-->
+              </div>
+            </div>
+          </section>
+          <!--자주 묻는 질문 끝-->
+        </section>
+        <!--비즈니스 공간 섹션 끝-->
+      </div>
+    </main>
+
+    <!--푸터 시작-->
+    <footer class="bg-dark text-center text-light py-3">
+      <div class="container overflow-hidden">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div>
+              <div class="my-3">
+                <a
+                  href="./index.html"
+                  class="text-decoration-none link-light fs-5 sunflower-font"
+                  ><img src="./images/logo.png" alt="로고" />이젠 인테리어</a
+                >
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                voluptatum temporibus nulla inventore asperiores necessitatibus!
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4">
+            <h5 class="fw-bold my-3">About Us</h5>
+            <div>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="./profile.html"
+                    class="text-decoration-none link-light"
+                    >프로필</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./private-interior.html"
+                    class="text-decoration-none link-light"
+                    >프라이빗 인테리어</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./business-interior.html"
+                    class="text-decoration-none link-light"
+                    >비즈니스 인테리어</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./contact.html"
+                    class="text-decoration-none link-light"
+                    >연락처</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4">
+            <h5 class="fw-bold my-3">소셜 미디어</h5>
+            <div>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-decoration-none link-light">유튜브</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none link-light">블로그</a>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none link-light"
+                    >인스타그램</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none link-light"
+                    >페이스북</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="my-3">
+              <i class="bi bi-c-circle"></i> ALL RIGHT RESERVED BY
+              <a href="#main" class="text-decoration-none text-info"
+                >이젠 인테리어</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--푸터 끝-->
+
+    <!--메인 섹션 끝-->
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>
